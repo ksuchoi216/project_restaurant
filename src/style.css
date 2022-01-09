@@ -1,0 +1,130 @@
+:root{
+    --bg: #3437eb;
+    --nav-bg: #333;
+    --hover: #111;
+    --active: #04AA6D;
+}
+
+
+/* 
+position
+display
+margin
+border
+background(with color)
+padding
+height × width 
+font
+color
+*/
+/* GENERAL */
+/* <div><iframe src="https://giphy.com/embed/XqBThA5IOL8Pu" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/food-gif-kimchi-maangchi-XqBThA5IOL8Pu">via GIPHY</a></p></div> */
+/* <iframe src="https://giphy.com/embed/SLspYPVNCYvTi" width="480" height="313" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/food-porn-gif-bibimbap-SLspYPVNCYvTi">via GIPHY</a></p> */
+/* <iframe src="https://giphy.com/embed/3ofSBmKHB3ClRdEPFm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/food-korean-korea-3ofSBmKHB3ClRdEPFm">via GIPHY</a></p> */
+html {
+    /* background-size: cover; */
+    background-color: var(--bg);
+}
+
+* {
+    font-family: Rancho;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    /* border: 4px solid white; */
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg);
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: var(--hover);
+}
+
+.nav .active {
+    background-color: var(--active);
+}
+/* NAV */
+.navbar {
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+/* SEC1 */
+.imgpanel{
+    /* display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(1, 800px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+    background-size: cover;
+
+    border: 2px solid white;
+    width: 100%;
+}
+.foodgif{
+    width: 800px;
+    height: 400px;
+}
+
+/* SEC2 */
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.menu-title {
+    font-size: 30px;
+}
+.foodlist li {
+    font-size: 20px;
+}
+
+/* SEC3 */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.contact-title {
+    font-size: 30px;
+}
+.contact div{
+    font-size: 20px;
+}
+.contact img{
+    width: 60%;
+}
+
